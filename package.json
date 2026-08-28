@@ -3,6 +3,14 @@
   "version": "0.4.5",
   "description": "Generate AI-friendly project context for Vue and Nuxt — plus a plain-language overview for non-technical readers",
   "type": "module",
+  "repository": {
+    "type": "git",
+     "url": "git+https://github.com/mhfarsiii/Vue-Context-For-LLM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhfarsiii/Vue-Context-For-LLM/issues"
+  },
+    "homepage": "https://github.com/mhfarsiii/Vue-Context-For-LLM#readme",
   "bin": {
     "vue-context-project": "./dist/cli.js"
   },
