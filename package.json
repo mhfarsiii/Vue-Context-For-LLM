@@ -1,0 +1,53 @@
+{
+  "name": "vue-context-project",
+  "version": "0.4.5",
+  "description": "Generate AI-friendly project context for Vue and Nuxt — plus a plain-language overview for non-technical readers",
+  "type": "module",
+  "bin": {
+    "vue-context-project": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "context",
+    "ai",
+    "cli",
+    "project-context",
+    "frontend"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.5.13",
+    "commander": "^13.1.0",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "vitest": "^3.0.8"
+  }
+}
